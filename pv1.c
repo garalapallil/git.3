@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<string.h>
 
+//let's create a structure of student details 
 struct student{
 int roll_no;
 char name[30];
@@ -8,6 +9,7 @@ int age;
 char address[40];
 };
 
+//function for checking age of student
 void checkage(struct stuent[],int n){
 printf("students whose age is 14\n");
 for(int i+0; i<n; i++) {
@@ -17,6 +19,7 @@ printf("name : %s\n",stud[i].name);
 }
 }
 
+//function to check rollnumber of student
  void checkroll(struct student stud[],int n){
  printf("students with even roll no. \n0;
  for(int i=0;i<n;i++){
@@ -26,6 +29,7 @@ printf("name : %s\n",stud[i].name);
  }
  }
  
+ //function to get details of student
  void getdatails(struct student stud[],int n){
  printf("enter rollno.\n");
  int roll;
@@ -41,6 +45,7 @@ printf("name : %s\n",stud[i].name);
  }
  }
  
+ //above we  have defined the functions now we will call the functions
  int main() {
  int n;
  
